@@ -1,0 +1,66 @@
+:root{
+    --black: #000000;
+    --blue: #00b1ff;
+    --yellow: #EFFF00;
+    --red: #ff0019;
+    --green: #07ff00;
+}
+
+body{
+    margin: 0;
+    background-image: url(./assets/background.png);
+}
+
+/* ==================== DIV MAIN ====================*/
+.main-game{
+    width: 100vw;
+    height: 100vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ==================== CIRCLE ====================*/
+.genius{
+    width: 700px;
+    height: 700px;
+    
+    border-radius: 100%;
+    border: 1px solid var(--black);
+    background-color: var(--black);
+    
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: 'verde vermelho''amarelo azul';
+}
+
+/* ==================== CIRCLE COLORS ====================*/
+.blue{
+    grid-area: azul;
+    background-color: var(--blue);
+    border-bottom-right-radius: 100%;
+}
+
+.red{
+    grid-area: vermelho;
+    background-color: var(--red);
+    border-top-right-radius: 100%;
+}
+
+.yellow{
+    grid-area: amarelo;
+    background-color: var(--yellow);
+    border-bottom-left-radius: 100%;
+}
+
+.green{
+    grid-area: verde;
+    background-color: var(--green);
+    border-top-left-radius: 100%;
+}
+
+/* ==================== ACTION ====================*/
+.selected{
+    opacity: 0.4;
+}
