@@ -9,9 +9,9 @@
 <br>
 <b>principais conceitos aplicados:</b>
 <p align="center">
-CSS Grid
-Arrow Functions
-Manipulação de Array
+CSS Grid<br>
+Arrow Functions<br>
+Manipulação de Array<br>
 </p>
 </p>
 
